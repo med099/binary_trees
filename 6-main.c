@@ -28,6 +28,11 @@ int main(void)
 	root->right->right = binary_tree_node(root->right, 512);
 
 	binary_tree_print(root);
+	printf("--------preorder-----\n");
 	binary_tree_preorder(root, &print_num);
+	printf("--------inorder-----\n");
+	binary_tree_inorder(root, &print_num);
+	printf("--------postorder-----\n");
+	binary_tree_postorder(root, &print_num);
 	return (0);
 }
